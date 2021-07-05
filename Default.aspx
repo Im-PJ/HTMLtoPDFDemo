@@ -12,6 +12,9 @@
             <asp:Button Text="Puppeteer PDF" ID="btnPupet" runat="server" OnClick="btnPupet_Click" />
 
         </p>
+        <p>
+            <asp:Label Visible="false" ID="lblmsg" ForeColor="ForestGreen" Text="PDF generated successfully" runat="server" />
+        </p>
     </div>
 
 

@@ -60,11 +60,13 @@ namespace SFHTMLtoPDF
             {
                 Format = PaperFormat.A4,
                 Landscape = true,
-                PrintBackground = true
+                PrintBackground = true,
+                DisplayHeaderFooter = true
             };
             var page = await browser.NewPageAsync().ConfigureAwait(false);
             await page.GoToAsync(txtURL.Text).ConfigureAwait(false);
             await page.PdfAsync(output, pdfOptions).ConfigureAwait(false);
+            lblmsg.Visible = true;
         }
 
 
